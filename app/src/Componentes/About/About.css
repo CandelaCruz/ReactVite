@@ -1,0 +1,26 @@
+.about-container{
+    background-color:#F07724;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+   
+    
+    
+}
+
+
+.about h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+
+}
+
+.about p{
+    font-size: 1.5rem;
+   line-height: 1.5;
+   max-width: 800px;
+   margin: 0 auto;
+  
+}

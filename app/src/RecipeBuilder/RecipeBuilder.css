@@ -1,0 +1,27 @@
+.recipe-builder {
+    margin-top: 20px;
+  }
+  
+  .recipe-builder ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recipe-builder li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+  }
+  
+  .recipe-builder input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

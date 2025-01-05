@@ -1,0 +1,21 @@
+.ingredient-list {
+  margin: 20px auto;
+}
+
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+select:focus {
+  outline: none;
+  border-color:  #F07724;
+}
+
+ 
+  
+  

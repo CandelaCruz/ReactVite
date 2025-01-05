@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffe8cd;
+  }
+
+  h3{
+    font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  }

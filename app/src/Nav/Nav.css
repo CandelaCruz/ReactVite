@@ -1,0 +1,128 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#F07724;
+    padding: 10px 20px;
+  }
+
+  .logo a{
+    color: #F0E7D3;
+    font-size: 35px;
+   
+  }
+  
+  .logo span {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#F0E7D3;
+    
+  }
+  
+  .items {
+    display: flex;
+    gap: 20px;
+    
+  }
+
+  .logo a{
+    text-decoration: none;
+  }
+  
+  .items a {
+    color: #F0E7D3;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .items a:hover {
+    border-bottom: 2px solid #f29041;
+    
+
+}
+
+.login{
+  font-size: 30px;
+  color: #F0E7D3;
+}
+
+.login-hamburguer{
+  display: none;
+}
+  
+  .hamburger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 4px;
+    background-color: #F0E7D3;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Cuando el menú hamburguesa está abierto */
+  .hamburger-icon.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger-icon.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-icon.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Menú en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .items {
+      display: none; /* Ocultar el menú por defecto */
+      flex-direction: column;
+      gap: 10px;
+      background-color: #333;
+      padding: 10px;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      z-index: 1;
+    }
+
+    .items a:hover{
+      width: 125px;
+    }
+  
+    .items.open {
+      display: flex; 
+    }
+  
+    .hamburger-icon {
+      display: flex; 
+    }
+
+    .login{
+      display: none;
+    }
+
+    .login-hamburguer{
+      display: inline;
+    }
+  }
+  
+  
+  /* Menú en pantallas grandes */
+  @media (min-width: 769px) {
+    .hamburger-icon {
+      display: none; /* No mostrar el icono de hamburguesa en pantallas grandes */
+    }
+  }
+  
